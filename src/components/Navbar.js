@@ -1,3 +1,5 @@
+import React from "react";
+
 
 
 function Navbar () {
@@ -14,8 +16,22 @@ function Navbar () {
                     <li className="ul-item">Contact</li>
                 </ul>
             </nav>
+
+            <CartWidget/>
         </div>
     );
 }
+
+function CartWidget () {
+    return (
+
+        <div>
+            <img className="img-bag"  src="https://assets.webiconspng.com/uploads/2016/11/bag_buy_mall_shop_shopping_icon_339933.png" alt= " "></img>
+        </div>
+
+
+    )
+}
+
 
 export default Navbar

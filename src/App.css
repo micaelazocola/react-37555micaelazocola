@@ -59,7 +59,7 @@
 .header-nav {
   background-color: rgba(227, 137, 219, 0.897);
      height: 60px;
-     position: fixed;
+     
      width: 100%;
      top: 0%;
      left: 0%;
@@ -87,6 +87,8 @@
   border-radius: 10px;
 }
 
-
-
-
+.img-bag {
+  height: 60px;
+  width: 60px;
+  padding-left: 690px;
+}
