@@ -92,3 +92,30 @@
   width: 60px;
   padding-left: 690px;
 }
+
+.buttonAdd {
+color: black;
+background-color: rgb(218, 176, 238);
+border-radius: 3px;
+border-color: #a44eac;
+}
+
+.buttonSub{
+  color: black;
+background-color: rgb(218, 176, 238);
+border-radius: 3px;
+border-color: #a44eac;
+}
+
+.buttonCart {
+  color: black;
+background-color: rgb(218, 176, 238);
+border-radius: 3px;
+border-color: #a44eac;
+margin: 20px;
+font-family: 'Prata', serif;
+}
+
+.spanCount {
+  margin: 10px;
+}
