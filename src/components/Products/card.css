@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    height: 330px;
+    width: 350px  ;
+    background-color: rgba(79, 85, 85, 0.434);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.card-image{
+    display: flex;
+    height: 250px;
+}
+ 
