@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import ItemListContainer from './components/Products/ItemListContainer';
 import ItemCount from './components/ItemCount';
 import Card from './components/Products/card';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 
@@ -13,7 +14,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <ItemListContainer/>
+      <ItemDetailContainer/>
+      {/* <ItemListContainer/> */}
       <ItemCount initial= {1} stock={5}/>
       <ItemCount initial= {1} stock={8}/>
       {/* <header className="App-header"> </header>*/}

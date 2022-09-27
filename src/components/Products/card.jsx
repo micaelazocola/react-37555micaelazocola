@@ -12,7 +12,7 @@ function Card (props) {
             <div className="card-detail">
                 <h3 className="h3-card">{title}</h3>
                 <h4 className="h4-card">$ {price}</h4>
-                <button className="button-card"> Comprar</button>
+                <button className="button-card"> Ver más</button>
             </div>
             
         </div>
