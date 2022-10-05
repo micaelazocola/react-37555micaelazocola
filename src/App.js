@@ -22,8 +22,8 @@ function App() {
         <Route path= "category/:cat" element = {<ItemListContainer/>}></Route>
       </Routes>
 
-      <ItemCount initial= {1} stock={5}/>
-      <ItemCount initial= {1} stock={8}/>
+      {/* <ItemCount initial= {1} stock={5}/> */}
+      <ItemCount initial= {1} stock={6}/>
       <Link to="/Prendas"> Prendas </Link>
       <Link href="/"> Home </Link>
       {/* <header className="App-header"> </header>*/}
@@ -34,3 +34,4 @@ function App() {
 
 
 export default App;
+
