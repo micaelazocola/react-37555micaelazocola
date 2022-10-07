@@ -1,25 +1,33 @@
-import React from "react";
-import FlexWrapper from "../FlexWrapper/FlexWrapper"; 
+import React, {useContext} from "react";
 import ItemCount from "../ItemCount";
+import { cartCtx } from "../../context/cartContext"
 
-function ItemDetail ({course}) {
+function ItemDetail ({item}) {
+    const {addItem} = useContext(cartCtx)
+     let estadoCart = false; 
 
-    let estadoCart = false 
-    function handleAddToCart (){
-    alert("agregaste al carrito")
+function handleAddToCart (count){
+   /*  alert (`agregaste: ${count}`) */
+    addItem (item, count)
 }
     return (
-        <FlexWrapper rows= {true}>
+        <div>
             <div className="main container">
-                <h1>{course.title}</h1>
-                <img src="{course.img}" alt="{course.title}" />
-                <h3>$ {course.price}</h3>
+                <h1>{item.title}</h1>
+                <img src={item.img} alt={item.title} />
+                <h3>Cantidades en stock: {item.stock}</h3>
+                <h3>$ {item.price}</h3>
             </div>
           
-           {estadoCart === false?<ItemCount stock= {5} onAddToCart={handleAddToCart}/> : <button> Finalizar Compra</button>} 
-        </FlexWrapper>
+            {estadoCart === false? ( 
+           <ItemCount stock= {item.stock} onAddToCart={handleAddToCart}/>
+           ) : (
+           <button> Finalizar Compra</button> )}  
+            
+        </div>
     )
-
 }
+
+
 
 export default ItemDetail

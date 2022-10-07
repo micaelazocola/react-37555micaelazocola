@@ -22,7 +22,7 @@ function ItemCount ({stock, onAddToCart}) {
         <button className="buttonAdd" onClick={handleSubstract}> - </button>
         <span className="spanCount"> {count}</span>
         <button className="buttonSub" onClick={handleAdd}> + </button>
-        <button className="buttonCart" onClick={onAddToCart}> AGREGAR AL CARRITO</button>
+        <button className="buttonCart" onClick={() => onAddToCart(count)}> AGREGAR AL CARRITO</button>
     </div>
 
 

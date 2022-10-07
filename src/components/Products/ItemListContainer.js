@@ -13,7 +13,7 @@ const {cat} = useParams()
 
 useEffect (
     ()=> {
-        console.log("use effect")
+        /* console.log("use effect") */
         getItems().then( (respuestaDatos) => {
         setData (respuestaDatos);
         });

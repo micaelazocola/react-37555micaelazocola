@@ -19,7 +19,7 @@ function Card (props) {
                 <Link to={urlDetalle}>
                      <button className="button-card"> Ver más</button>
                 </Link>
-               {/*  <ItemCount  initial = {1} stock= {stock}/> */}
+               { <ItemCount  initial = {1} stock= {stock}/>}
             </div>
             
         </div>
